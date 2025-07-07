@@ -147,10 +147,38 @@ FROM medical_records m
 JOIN fitness_records f ON f.model_name = m.tracker;
 
 
+SELECT * FROM fitness_records;
 
+SELECT * FROM medical_records;
+
+SELECT * FROM patients;
+
+EXPLAIN ANALYZE
+SELECT *
+FROM patients
+LEFT JOIN (
+    SELECT * FROM medical_conditions
+) AS mc ON CAST(patients.patient_id AS TEXT) = CAST(mc.patient_id AS TEXT)
+LEFT JOIN (
+    SELECT * FROM medications
+) AS m ON CAST(patients.patient_id AS TEXT) = CAST(m.patient_id AS TEXT)
+LEFT JOIN (
+    SELECT * FROM allergies
+) AS a ON CAST(patients.patient_id AS TEXT) = CAST(a.patient_id AS TEXT)
+LEFT JOIN (
+    SELECT * FROM appointments
+) AS appt ON CAST(patients.patient_id AS TEXT) = CAST(appt.patient_id AS TEXT)
+LEFT JOIN (
+    SELECT * FROM trackers
+) AS t ON CAST(patients.patient_id AS TEXT) = CAST(t.patient_id AS TEXT)
+LEFT JOIN (
+    SELECT * FROM fitness_records
+) AS fit ON CAST(t.fitness_record_id AS TEXT) = CAST(fit.id AS TEXT)
+ORDER BY LOWER(patients.name);
 
 
 -- Get patients health and device usuage
+EXPLAIN ANALYZE
 SELECT
 	patients.name,
 	patients.date_of_birth,
@@ -168,29 +196,18 @@ LEFT JOIN trackers AS t ON patients.patient_id = t.patient_id
 LEFT JOIN fitness_records AS fit ON t.fitness_record_id = fit.id
 ORDER BY patients.name;
 
+EXPLAIN ANALYZE
+SELECT 
+    brand_name,
+    model_name,
+    average_battery_life
+FROM (
+    SELECT * FROM fitness_records
+) AS fr
+WHERE CAST(fr.average_battery_life AS TEXT) < '5'
+ORDER BY LENGTH(CAST(fr.average_battery_life AS TEXT)) DESC;
 
--- Count of patients using each tracker model
-SELECT
-	fit.model_name,
-	COUNT(t.patient_id) AS user_count
-FROM trackers AS t
-JOIN fitness_records AS fit ON t.fitness_record_id = fit.id
-GROUP BY fit.model_name
-ORDER BY user_count DESC;
-
-
-
-SELECT
-	fit.brand_name,
-	fit.model_name,
-	COUNT(*) AS total_sales
-FROM fitness_records AS fit
-GROUP BY fit.brand_name, fit.model_name
-ORDER BY total_sales DESC;
-
-
-
--- Find the device with low battery life
+EXPLAIN ANALYZE
 SELECT 
     brand_name,
     model_name,
@@ -200,8 +217,8 @@ WHERE average_battery_life < 5
 ORDER BY average_battery_life DESC;
 
 
-
 -- Count of patients using each tracker model
+EXPLAIN ANALYZE
 SELECT
 	fit.model_name,
 	COUNT(t.patient_id) AS user_count
@@ -209,24 +226,11 @@ FROM trackers AS t
 JOIN fitness_records AS fit ON t.fitness_record_id = fit.id
 GROUP BY fit.model_name
 ORDER BY user_count DESC;
-
 
 CREATE INDEX idx_mc_patient_id ON medical_conditions(patient_id);
 CREATE INDEX idx_meds_patient_id ON medications(patient_id);
 CREATE INDEX idx_allergies_patient_id ON allergies(patient_id);
 CREATE INDEX idx_appointments_patient_id ON appointments(patient_id);
-CREATE INDEX idx_trackers_patient_id ON trackers(patient_id);
+CREATE INDEX idx_tracker_patient_id ON trackers(patient_id);
 CREATE INDEX idx_trackers_fitness_id ON trackers(fitness_record_id);
 CREATE INDEX idx_fitness_model_name ON fitness_records(model_name);
-CREATE INDEX idx_fitness_battery ON fitness_records(average_battery_life);
-
-
-SELECT
-	fit.model_name,
-	COUNT(t.patient_id) AS user_count
-FROM trackers AS t
-JOIN fitness_records AS fit ON t.fitness_record_id = fit.id
-GROUP BY fit.model_name
-ORDER BY user_count DESC;
-
-
