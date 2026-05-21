@@ -1,0 +1,81 @@
+---
+title: "api_dev_R"
+output: html_document
+---
+
+Import the required libraries
+``` {r imports}
+
+library(anytime)
+library(stringr)
+library(data.table)
+library(glmnet)
+library(jsonlite)
+library(lubridate)
+library(plumber)
+
+```
+
+Import the airport JSON array
+``` {r import JSON}
+
+airport_list <- fromJSON("airport_encodings.json")
+airports <- airport_list[,1]
+```
+
+Import the previously saved regression model
+``` {r import_model}
+
+delays_model <- readRDS("finalized_model.rda")
+
+```
+
+Create_airport_encoding is a function that takes two parameters:
+airport: character string representing the arrival airport code
+airports: matrix containing all possible arrival airports and their codes
+
+and returns a vector consisting of all zeros except a single 1 in the position
+of the selected arrival airport.  This is therefore a one-hot encoding of the
+arrival airport.
+``` {r one_hot_encoding}
+create_airport_encoding <- function(airport, airports) {
+  # create empty list the length of the airports array
+  airport_encode <- vector("integer",length(airports))
+  # if requested airport is in the airports array, make the value 1 at that 
+  # point in the list
+  found_index <- grep(airport, airports)
+  if (length(found_index) != 0 ) {
+    airport_encode[found_index] <- 1
+    return <- airport_encode
+  }
+  # else return none
+  else {
+    return <- NULL
+  }
+}
+
+```
+
+num_seconds is a function that takes a single parameter, a time in HHMM format
+as a character string, and returns a number of seconds since midnight
+
+``` {r convert_times}
+
+num_seconds <- function(char_time) {
+  char_time <- str_pad(char_time,4,pad="0")
+  atime <- as.POSIXct(char_time, tz="", format="%H%M")
+  atime <- hour(atime)*3600 + minute(atime)*60 + second(atime)
+  return <- atime
+}
+
+```
+
+
+TODO:  write the back-end logic to provide a prediction given the inputs
+The model must be passed a vector consisting of the following:
+(one-hot encoded airport vector, departure time in seconds since midnight,
+arrival time in seconds since midnight)
+YOUR CODE GOES HERE
+
+TODO:  write the API endpoints.  
+YOUR CODE GOES HERE

@@ -1,0 +1,22 @@
+name: flight_delay_pipeline
+
+conda_env: pipeline_env.yaml
+
+entry_points:
+    main:
+    parameters:
+      num_alphas: {type: int, default: 20}
+      order: {type: int, default: 1}
+    command: "python main_v2.py --num_alphas {num_alphas} --order {order}"
+
+  importing_and_formatting:
+    command: "python import_data_v2.py"
+
+  cleaning_and_filtering:
+    command: "python clean_data_v2.py"
+
+  train_model:
+    parameters:
+      num_alphas: {type: int, default: 20}
+      order: {type: int, default: 1}
+    command: "python poly_regressor_Python_v2.py --num_alphas {num_alphas} --order {order}"

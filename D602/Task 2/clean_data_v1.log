@@ -1,0 +1,4 @@
+00:43:37 INFO Data Cleaning Script Version 1
+00:43:37 INFO Loaded 539747 rows from import_datav2.csv
+00:43:37 INFO After LAX filter: 15157 rows remaining
+00:43:37 INFO Saved 15157 rows to cleaned_datav1.csv

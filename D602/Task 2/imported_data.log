@@ -1,0 +1,3 @@
+22:55:52 INFO Data Import Script Version 1
+22:55:53 INFO Loaded 539747 rows from T_ONTIME_REPORTING.csv
+22:55:53 INFO Saved 539747 rows to imported_data.csv

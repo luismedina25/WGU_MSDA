@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59969c7c-9ac6-41ca-95dc-5ebf8a8417b6" name="Changes" comment="Fixed the test api file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;lmed150&quot;,
+      &quot;fullname&quot;: &quot;luis medina&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/wgu-gitlab-environment/student-repos/lmed150/d602-deployment-task-3.git&quot;,
+    &quot;second&quot;: &quot;da2f79c1-1b75-499a-b966-a736ac68d4fd&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3ADwr10I1G69v91gnQbfwBdMBeQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;working__branch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/luism/PycharmProjects/d602-deployment-task-3&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\luism\PycharmProjects\d602-deployment-task-3" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.173" />
+        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59969c7c-9ac6-41ca-95dc-5ebf8a8417b6" name="Changes" comment="" />
+      <created>1772140643606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772140643606</updated>
+      <workItem from="1772140644636" duration="2871000" />
+      <workItem from="1772147158042" duration="20179000" />
+      <workItem from="1772222404539" duration="2948000" />
+      <workItem from="1772261845813" duration="3014000" />
+      <workItem from="1773798580833" duration="243000" />
+      <workItem from="1774072043500" duration="21000" />
+      <workItem from="1774908765213" duration="1548000" />
+      <workItem from="1775082551149" duration="40935000" />
+      <workItem from="1775523206023" duration="8337000" />
+      <workItem from="1775592949367" duration="11054000" />
+    </task>
+    <task id="LOCAL-00001" summary="Part B version 1 finished">
+      <option name="closed" value="true" />
+      <created>1772167674473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772167674473</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Part B version 2 finished">
+      <option name="closed" value="true" />
+      <created>1772176737152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772176737152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Part C version 1 finished">
+      <option name="closed" value="true" />
+      <created>1772179315871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772179315871</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Part C version 2 finished">
+      <option name="closed" value="true" />
+      <created>1772179326638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772179326638</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Part D version 1 finished.">
+      <option name="closed" value="true" />
+      <created>1772180624595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772180624595</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed an issue with requirements.txt">
+      <option name="closed" value="true" />
+      <created>1772181431060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772181431060</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed an issue with requirements.txt">
+      <option name="closed" value="true" />
+      <created>1772222505478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1772222505478</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed an issue with requirements.txt">
+      <option name="closed" value="true" />
+      <created>1772222666971</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1772222666971</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed an issue with requirements.txt">
+      <option name="closed" value="true" />
+      <created>1772224198028</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772224198028</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed an issue with requirements.txt">
+      <option name="closed" value="true" />
+      <created>1772225626699</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772225626699</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added the second Dockerfile version and changed the first one to v1.">
+      <option name="closed" value="true" />
+      <created>1772227133114</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1772227133114</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed the test api file">
+      <option name="closed" value="true" />
+      <created>1775379891506</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775379891506</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed the test api file">
+      <option name="closed" value="true" />
+      <created>1775694146117</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1775694146117</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Part B version 1 finished" />
+    <MESSAGE value="Part B version 2 finished" />
+    <MESSAGE value="Part C version 1 finished" />
+    <MESSAGE value="Part C version 2 finished" />
+    <MESSAGE value="Part D version 1 finished." />
+    <MESSAGE value="Fixed an issue with requirements.txt" />
+    <MESSAGE value="Added the second Dockerfile version and changed the first one to v1." />
+    <MESSAGE value="Fixed the test api file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the test api file" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

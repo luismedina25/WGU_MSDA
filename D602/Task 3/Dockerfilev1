@@ -1,0 +1,22 @@
+# Use official Python base image
+FROM python:3.11-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy requirements file and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy all necessary project files into the container
+COPY airport_encodings.json .
+COPY finalized_model.pkl .
+COPY poly.pkl .
+COPY API_Python_v1.py .
+COPY API_Python_v2.py .
+
+# Expose port 8000 for the web server
+EXPOSE 8000
+
+# Start the Uvicorn web server running the API
+CMD ["uvicorn", "API_Python_v2:app", "--host", "0.0.0.0", "--port", "8000"]

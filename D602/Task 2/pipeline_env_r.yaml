@@ -1,0 +1,25 @@
+name: pipeliner
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - r-base=4.*
+  - r-anytime
+  - r-caret
+  - r-CatEncoders
+  - r-data.table
+  - r-dplyr
+  - r-ggExtra
+  - r-ggplot2
+  - r-glmnet
+  - r-jsonlite
+  - r-logger
+  - r-lubridate
+  - r-mlflow
+  - r-mltools
+  - r-reticulate
+  - r-stringr
+  - r-tidyverse
+  - pip:
+    - mlflow

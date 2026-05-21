@@ -1,0 +1,22 @@
+2026-03-24 20:58:57,937 - INFO - Pipeline started
+2026-03-24 20:58:57,937 - INFO - Parameters: num_alphas=20, order=1
+2026-03-24 20:58:57,937 - INFO - Starting Step 1: Data Import
+2026-03-24 20:58:59,709 - INFO - Completed in 1.77 seconds: Step 1: Data Import
+2026-03-24 20:58:59,709 - INFO - Output 
+2026-03-24 20:58:59,709 - INFO - Starting Step 2: Data Cleaning
+2026-03-24 20:59:00,315 - INFO - Completed in 0.61 seconds: Step 2: Data Cleaning
+2026-03-24 20:59:00,316 - INFO - Output 
+2026-03-24 20:59:00,316 - INFO - Starting Step 3: Model Training
+2026-03-24 20:59:00,337 - ERROR - Failed after 0.02 seconds: Step 3: Model Training
+2026-03-24 20:59:00,338 - ERROR - STDERR: C:\Users\luism\miniconda3\envs\d602-deployment-task-2\python.exe: can't open file 'C:\\Users\\luism\\PycharmProjects\\d602-deployment-task-2\\poly_regressor_Python_v2.py': [Errno 2] No such file or directory
+2026-03-24 21:04:52,406 - INFO - Pipeline started
+2026-03-24 21:04:52,406 - INFO - Parameters: num_alphas=20, order=1
+2026-03-24 21:04:52,406 - INFO - Starting Step 1: Data Import
+2026-03-24 21:04:53,949 - INFO - Completed in 1.54 seconds: Step 1: Data Import
+2026-03-24 21:04:53,949 - INFO - Output 
+2026-03-24 21:04:53,949 - INFO - Starting Step 2: Data Cleaning
+2026-03-24 21:04:54,576 - INFO - Completed in 0.63 seconds: Step 2: Data Cleaning
+2026-03-24 21:04:54,576 - INFO - Output 
+2026-03-24 21:04:54,576 - INFO - Starting Step 3: Model Training
+2026-03-24 21:05:01,129 - INFO - Completed in 6.55 seconds: Step 3: Model Training
+2026-03-24 21:05:01,129 - INFO - Pipeline completed. Total time: 8.72

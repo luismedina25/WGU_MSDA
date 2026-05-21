@@ -1,0 +1,22 @@
+[21:04:52] [INFO] Data Import Script Version 2
+[21:04:53] [INFO] Loaded 539747 rows and 14 columns from T_ONTIME_REPORTING.csv
+[21:04:53] [INFO] All expected columns found in source file
+[21:04:53] [INFO] Renamed 12 columns
+[21:04:53] [INFO] Kept 12 target columns
+[21:04:53] [INFO] Numeric type enforcement complete
+[21:04:53] [INFO] Final shape after formatting: (539747, 12)
+[21:04:53] [INFO] Columns: ['YEAR', 'MONTH', 'DAY', 'DAY_OF_WEEK', 'ORG_AIRPORT', 'DEST_AIRPORT', 'SCHEDULED_DEPARTURE', 'DEPARTURE_TIME', 'DEPARTURE_DELAY', 'SCHEDULED_ARRIVAL', 'ARRIVAL_TIME', 'ARRIVAL_DELAY']
+[21:04:53] [INFO] Null counts:
+YEAR                       0
+MONTH                      0
+DAY                        0
+DAY_OF_WEEK                0
+ORG_AIRPORT                0
+DEST_AIRPORT               0
+SCHEDULED_DEPARTURE        0
+DEPARTURE_TIME         15886
+DEPARTURE_DELAY        15923
+SCHEDULED_ARRIVAL          0
+ARRIVAL_TIME           16580
+ARRIVAL_DELAY          17478
+[21:04:53] [INFO] Saved formatted data to import_datav2.csv

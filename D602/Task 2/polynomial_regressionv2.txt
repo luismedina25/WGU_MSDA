@@ -1,0 +1,86 @@
+21:04:57 INFO Flight Departure Delays Polynomial Regression Model Log Version 2
+21:04:57 INFO Parameters: num_alphas = 20, order = 1
+21:04:57 INFO Month and year of data: 1 2025
+21:04:58 INFO Airport one-hot encoding successful
+21:04:58 DEBUG Starting new HTTPS connection (1): config.mlflow-telemetry.io:443
+21:04:59 DEBUG https://config.mlflow-telemetry.io:443 "GET /3.10.0.json HTTP/1.1" 200 308
+21:04:59 DEBUG Popen(['git', 'version'], cwd=C:\Users\luism\PycharmProjects\d602-deployment-task-2, stdin=None, shell=False, universal_newlines=False)
+21:04:59 DEBUG Popen(['git', 'version'], cwd=C:\Users\luism\PycharmProjects\d602-deployment-task-2, stdin=None, shell=False, universal_newlines=False)
+21:04:59 DEBUG sys.platform='win32', git_executable='git'
+21:04:59 DEBUG Popen(['git', 'check-ignore', 'C:\\Users\\luism\\PycharmProjects\\d602-deployment-task-2'], cwd=C:\Users\luism\PycharmProjects\d602-deployment-task-2, stdin=None, shell=False, universal_newlines=False)
+21:04:59 DEBUG Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\luism\PycharmProjects\d602-deployment-task-2, stdin=<valid stream>, shell=False, universal_newlines=False)
+21:04:59 INFO n=1 alpha=0.0 , MSE = 2.4901e+16
+21:04:59 INFO n=1 alpha=0.2 , MSE = 118.23
+21:04:59 INFO n=1 alpha=0.4 , MSE = 118.02
+21:04:59 INFO n=1 alpha=0.6 , MSE = 117.86
+21:04:59 INFO n=1 alpha=0.8 , MSE = 117.73
+21:04:59 INFO n=1 alpha=1.0 , MSE = 117.63
+21:04:59 INFO n=1 alpha=1.2 , MSE = 117.54
+21:04:59 INFO n=1 alpha=1.4 , MSE = 117.47
+21:04:59 INFO n=1 alpha=1.6 , MSE = 117.41
+21:04:59 INFO n=1 alpha=1.8 , MSE = 117.35
+21:04:59 INFO n=1 alpha=2.0 , MSE = 117.3
+21:04:59 INFO n=1 alpha=2.2 , MSE = 117.26
+21:04:59 INFO n=1 alpha=2.4 , MSE = 117.23
+21:04:59 INFO n=1 alpha=2.6 , MSE = 117.19
+21:05:00 INFO n=1 alpha=2.8 , MSE = 117.16
+21:05:00 INFO n=1 alpha=3.0 , MSE = 117.14
+21:05:00 INFO n=1 alpha=3.2 , MSE = 117.11
+21:05:00 INFO n=1 alpha=3.4 , MSE = 117.09
+21:05:00 INFO n=1 alpha=3.6 , MSE = 117.07
+21:05:00 INFO n=1 alpha=3.8 , MSE = 117.05
+21:05:00 INFO Training Data Final MSE = 117.05
+21:05:00 INFO Model training loop completed with 20 iterations
+21:05:00 INFO Export of airport one-hot encoding successful
+21:05:00 INFO Wrangling of test data successful
+21:05:00 INFO Test Data MSE = 71.38
+21:05:00 INFO Predictions using test data successful
+21:05:00 INFO Test Data average delay = 8.45 min
+21:05:00 INFO Final model export successful
+21:05:00 DEBUG Loaded backend tkagg version 8.6.
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 1189
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 2994
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 374
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 286
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 263
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 387
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 436
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 351
+21:05:00 DEBUG STREAM b'IHDR' 16 13
+21:05:00 DEBUG STREAM b'sBIT' 41 4
+21:05:00 DEBUG b'sBIT' 41 4 (unknown)
+21:05:00 DEBUG STREAM b'pHYs' 57 9
+21:05:00 DEBUG STREAM b'IDAT' 78 364
+21:05:00 INFO Model performance plot export successful

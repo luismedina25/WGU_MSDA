@@ -1,0 +1,22 @@
+01:08:58 INFO Data Cleaning Script Version 2
+01:08:58 INFO Loaded 539747 rows from import_datav2.csv
+01:08:58 INFO Step 1: LAX filter: removed 524590 rows 15157 remaining
+01:08:58 INFO Step 2: Month filter (month=1): removed 0 rows, 15157 remaining
+01:08:58 INFO Step 3: Duplicates removed: 0 rows, 15157 remaining
+01:08:58 INFO Step 4: Null values removed: 147 rows, 15010 remaining
+01:08:58 INFO Step 5: Null values removed: 0 rows, 15010 remaining
+01:08:58 INFO Final cleaned dataset shape: (15010, 12)
+01:08:58 INFO Null counts in final data:
+YEAR                    0
+MONTH                   0
+DAY                     0
+DAY_OF_WEEK             0
+ORG_AIRPORT             0
+DEST_AIRPORT            0
+SCHEDULED_DEPARTURE     0
+DEPARTURE_TIME          0
+DEPARTURE_DELAY         0
+SCHEDULED_ARRIVAL       0
+ARRIVAL_TIME           23
+ARRIVAL_DELAY          52
+01:08:58 INFO Saved cleaned data to cleaned_datav2.csv

@@ -1,0 +1,26 @@
+include:
+  - template: Kaniko.gitlab-ci.yml
+
+stages:
+  - test
+  - build
+
+pytest:
+  stage: test
+  image: python
+  rules:
+    - exists:
+      - "test_*.py"
+  script:
+    - pip install --no-cache-dir --upgrade -r requirements.txt
+    - pytest
+
+r-tests:
+  stage: test
+  image: r-base
+  rules:
+    - exists:
+      - "test/testthat/*"
+  script:
+    - apt update && apt dist-upgrade -y && apt install -y libssl-dev libcurl4-openssl-dev libsodium-dev
+    - R -e 'install.packages(c("testthat","anytime","stringr","data.table","glmnet","jsonlite","lubridate","plumber"),repos="http://cran.us.r-project.org", quiet = TRUE);library(testthat);test_dir("./tests/testthat/", stop_on_failure = TRUE)'
